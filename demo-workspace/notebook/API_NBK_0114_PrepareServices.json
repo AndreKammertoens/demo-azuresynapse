@@ -22,7 +22,7 @@
 				"spark.dynamicAllocation.enabled": "true",
 				"spark.dynamicAllocation.minExecutors": "1",
 				"spark.dynamicAllocation.maxExecutors": "4",
-				"spark.autotune.trackingId": "090c8a04-9fdb-42f7-bc66-4fd47eeac0e4"
+				"spark.autotune.trackingId": "174bac67-87a4-4353-ac75-e666781e8727"
 			}
 		},
 		"metadata": {
@@ -36,7 +36,7 @@
 				"name": "python"
 			},
 			"a365ComputeOptions": {
-				"id": "/subscriptions/21194b02-afea-4d59-a0c9-9486eeb9d27f/resourceGroups/rg-aes-dwh-tmp-001/providers/Microsoft.Synapse/workspaces/synw-demo-001/bigDataPools/DemoSparkPool",
+				"id": "/subscriptions/a0e2be77-6873-4c2d-80a1-03404c24f2d5/resourceGroups/RG_APIAnalytics/providers/Microsoft.Synapse/workspaces/synw-demo-001/bigDataPools/DemoSparkPool",
 				"name": "DemoSparkPool",
 				"type": "Spark",
 				"endpoint": "https://synw-demo-001.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/DemoSparkPool",
@@ -45,7 +45,7 @@
 					"authResource": "https://dev.azuresynapse.net"
 				},
 				"sparkVersion": "3.2",
-				"nodeCount": 3,
+				"nodeCount": 10,
 				"cores": 16,
 				"memory": 112,
 				"automaticScaleJobs": true
@@ -105,7 +105,7 @@
 					"# Parameter Cell: https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#integrate-a-notebook\n",
 					"\n",
 					"# file system where the data is located\n",
-					"container = 'abfss://apianalytics@dlsaesdwhtmp002data.dfs.core.windows.net'\n",
+					"container = 'abfss://apianalytics@storsynwdata.dfs.core.windows.net'\n",
 					"\n",
 					"# Name of the file, data and table that should be transformed\n",
 					"table = 'Services'"

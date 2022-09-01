@@ -22,7 +22,7 @@
 				"spark.dynamicAllocation.enabled": "true",
 				"spark.dynamicAllocation.minExecutors": "1",
 				"spark.dynamicAllocation.maxExecutors": "8",
-				"spark.autotune.trackingId": "c3a6fc4e-56ef-435a-902c-2e9458b0c32a"
+				"spark.autotune.trackingId": "e596a40c-69c3-4879-b379-d6d73deaa173"
 			}
 		},
 		"metadata": {
@@ -36,7 +36,7 @@
 				"name": "python"
 			},
 			"a365ComputeOptions": {
-				"id": "/subscriptions/21194b02-afea-4d59-a0c9-9486eeb9d27f/resourceGroups/rg-aes-dwh-tmp-001/providers/Microsoft.Synapse/workspaces/synw-demo-001/bigDataPools/DemoSparkPool",
+				"id": "/subscriptions/a0e2be77-6873-4c2d-80a1-03404c24f2d5/resourceGroups/RG_APIAnalytics/providers/Microsoft.Synapse/workspaces/synw-demo-001/bigDataPools/DemoSparkPool",
 				"name": "DemoSparkPool",
 				"type": "Spark",
 				"endpoint": "https://synw-demo-001.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/DemoSparkPool",
@@ -45,7 +45,7 @@
 					"authResource": "https://dev.azuresynapse.net"
 				},
 				"sparkVersion": "3.2",
-				"nodeCount": 3,
+				"nodeCount": 10,
 				"cores": 16,
 				"memory": 112,
 				"automaticScaleJobs": true
@@ -130,7 +130,7 @@
 					"# Parameter Cell: https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#integrate-a-notebook\r\n",
 					"\r\n",
 					"# file system where the data is located\r\n",
-					"container = 'abfss://apianalytics@dlsaesdwhtmp002data.dfs.core.windows.net'"
+					"container = 'abfss://apianalytics@storsynwdata.dfs.core.windows.net'"
 				],
 				"execution_count": 2
 			},
