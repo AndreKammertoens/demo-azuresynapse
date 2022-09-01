@@ -1,0 +1,7 @@
+{
+	"name": "AzureDataLakeStorage597",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/a0e2be77-6873-4c2d-80a1-03404c24f2d5/resourceGroups/RG_APIAnalytics/providers/Microsoft.Storage/storageAccounts/storsynwdata",
+		"groupId": "dfs"
+	}
+}
