@@ -50,7 +50,13 @@
 					"sparkPool": {
 						"referenceName": "DemoSparkPool",
 						"type": "BigDataPoolReference"
-					}
+					},
+					"conf": {
+						"spark.dynamicAllocation.enabled": null,
+						"spark.dynamicAllocation.minExecutors": null,
+						"spark.dynamicAllocation.maxExecutors": null
+					},
+					"numExecutors": null
 				}
 			},
 			{
@@ -100,7 +106,13 @@
 					"sparkPool": {
 						"referenceName": "DemoSparkPool",
 						"type": "BigDataPoolReference"
-					}
+					},
+					"conf": {
+						"spark.dynamicAllocation.enabled": null,
+						"spark.dynamicAllocation.minExecutors": null,
+						"spark.dynamicAllocation.maxExecutors": null
+					},
+					"numExecutors": null
 				}
 			},
 			{
@@ -150,7 +162,13 @@
 					"sparkPool": {
 						"referenceName": "DemoSparkPool",
 						"type": "BigDataPoolReference"
-					}
+					},
+					"conf": {
+						"spark.dynamicAllocation.enabled": null,
+						"spark.dynamicAllocation.minExecutors": null,
+						"spark.dynamicAllocation.maxExecutors": null
+					},
+					"numExecutors": null
 				}
 			},
 			{
@@ -200,7 +218,13 @@
 					"sparkPool": {
 						"referenceName": "DemoSparkPool",
 						"type": "BigDataPoolReference"
-					}
+					},
+					"conf": {
+						"spark.dynamicAllocation.enabled": null,
+						"spark.dynamicAllocation.minExecutors": null,
+						"spark.dynamicAllocation.maxExecutors": null
+					},
+					"numExecutors": null
 				}
 			},
 			{
@@ -250,7 +274,13 @@
 					"sparkPool": {
 						"referenceName": "DemoSparkPool",
 						"type": "BigDataPoolReference"
-					}
+					},
+					"conf": {
+						"spark.dynamicAllocation.enabled": null,
+						"spark.dynamicAllocation.minExecutors": null,
+						"spark.dynamicAllocation.maxExecutors": null
+					},
+					"numExecutors": null
 				}
 			},
 			{
@@ -371,7 +401,13 @@
 					"sparkPool": {
 						"referenceName": "DemoSparkPool",
 						"type": "BigDataPoolReference"
-					}
+					},
+					"conf": {
+						"spark.dynamicAllocation.enabled": null,
+						"spark.dynamicAllocation.minExecutors": null,
+						"spark.dynamicAllocation.maxExecutors": null
+					},
+					"numExecutors": null
 				}
 			},
 			{
@@ -794,7 +830,7 @@
 			},
 			"AdlsUri": {
 				"type": "String",
-				"defaultValue": "abfss://apianalytics@dlsaesdwhtmp002data.dfs.core.windows.net"
+				"defaultValue": "abfss://apianalytics@storsynwdata.dfs.core.windows.net"
 			}
 		},
 		"folder": {
