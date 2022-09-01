@@ -12,17 +12,17 @@
 			"type": "BigDataPoolReference"
 		},
 		"sessionProperties": {
-			"driverMemory": "28g",
-			"driverCores": 4,
-			"executorMemory": "28g",
-			"executorCores": 4,
+			"driverMemory": "112g",
+			"driverCores": 16,
+			"executorMemory": "112g",
+			"executorCores": 16,
 			"numExecutors": 1,
 			"runAsWorkspaceSystemIdentity": true,
 			"conf": {
 				"spark.dynamicAllocation.enabled": "true",
 				"spark.dynamicAllocation.minExecutors": "1",
-				"spark.dynamicAllocation.maxExecutors": "4",
-				"spark.autotune.trackingId": "faa379f5-66a4-4c9b-b0a8-c6390fcc79fb"
+				"spark.dynamicAllocation.maxExecutors": "8",
+				"spark.autotune.trackingId": "3272aed8-a131-4e94-b28d-25614974178c"
 			}
 		},
 		"metadata": {
@@ -36,12 +36,19 @@
 				"name": "python"
 			},
 			"a365ComputeOptions": {
-				"id": "/subscriptions/21194b02-afea-4d59-a0c9-9486eeb9d27f/resourceGroups/rg-aes-dwh-tmp-001/providers/Microsoft.Synapse/workspaces/synw-demo-001/bigDataPools/DemoSparkPool",
+				"id": "/subscriptions/a0e2be77-6873-4c2d-80a1-03404c24f2d5/resourceGroups/RG_APIAnalytics/providers/Microsoft.Synapse/workspaces/synw-demo-001/bigDataPools/DemoSparkPool",
 				"name": "DemoSparkPool",
+				"type": "Spark",
+				"endpoint": "https://synw-demo-001.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/DemoSparkPool",
 				"auth": {
 					"type": "AAD",
 					"authResource": "https://dev.azuresynapse.net"
-				}
+				},
+				"sparkVersion": "3.2",
+				"nodeCount": 10,
+				"cores": 16,
+				"memory": 112,
+				"automaticScaleJobs": true
 			},
 			"sessionKeepAliveTimeout": 60
 		},
